@@ -1,0 +1,25 @@
+notifications:
+  emailTo: target@somemail.com
+  smtp:
+    sender1:
+      emailFrom: sender1@host1.pl
+      properties:
+        mail.smtp.host: smtp.foo.pl
+        mail.smtp.port: 465
+        mail.smtp.ssl.enable: true
+      credentialsFile: ./src/test/resources/pass.txt
+    sender2:
+      emailFrom: sender2@host2.com
+      properties:
+        mail.smtp.host: smtp-mail.bar.com
+        mail.smtp.port: 587
+        mail.smtp.starttls.required: true
+      credentialsFile: ./src/test/resources/user_pass.txt
+    default:
+      properties:
+        mail.smtp.auth: true
+        mail.smtp.ssl.protocols: TLSv1.2
+        mail.smtp.connectiontimeout: 1000
+        mail.smtp.timeout: 5000
+
+logging.level.ROOT: INFO
