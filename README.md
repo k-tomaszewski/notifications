@@ -10,7 +10,7 @@ Some kind of notifications delivered to an operator/owner are needed.
 
 Next, such notification solution should require minimal effort and cost to deploy and run.
 E-mail messages are freely available for a long time, as one can create and use a mailbox account without 
-any cost. Moreover, e-mail clients are freely available for different devices (PC, mobile phone) and 
+any cost. Moreover, e-mail clients are freely available for different devices (PC, mobile phone, tablet) and 
 different operating systems. This constitutes an ecosystem for simple and cheap delivery of notifications.
 
 This library is trying to provide a production grade notifications solution that is based on e-mail
@@ -19,7 +19,7 @@ https://github.com/bbottema/simple-java-mail, but they lack functionality relate
 - retrying
 - redundancy
 
-Otherwise, these other solutions provide to complex API for a simple task of sending a notifications.
+Otherwise, these other solutions provide API too complex for a simple task of sending a notifications.
 
 That is why I've started this project.
 
