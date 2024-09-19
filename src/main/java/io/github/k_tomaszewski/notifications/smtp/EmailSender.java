@@ -3,13 +3,12 @@ package io.github.k_tomaszewski.notifications.smtp;
 import io.github.k_tomaszewski.notifications.FatalNotificationException;
 import io.github.k_tomaszewski.notifications.internal.Notification;
 import io.github.k_tomaszewski.notifications.internal.Sender;
-
-import javax.mail.AuthenticationFailedException;
-import javax.mail.MessagingException;
-import javax.mail.NoSuchProviderException;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
+import jakarta.mail.AuthenticationFailedException;
+import jakarta.mail.MessagingException;
+import jakarta.mail.NoSuchProviderException;
+import jakarta.mail.Session;
+import jakarta.mail.Transport;
+import jakarta.mail.internet.InternetAddress;
 
 import static io.github.k_tomaszewski.notifications.internal.MimeMessageUtil.createMimeMessage;
 import static io.github.k_tomaszewski.notifications.internal.MimeMessageUtil.toInternetAddress;

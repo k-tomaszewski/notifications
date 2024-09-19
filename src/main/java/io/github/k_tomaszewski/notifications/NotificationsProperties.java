@@ -4,10 +4,10 @@ import io.github.k_tomaszewski.notifications.internal.BasicRetryStrategy;
 import io.github.k_tomaszewski.notifications.internal.BasicSendingStrategy;
 import io.github.k_tomaszewski.notifications.smtp.Config;
 import jakarta.annotation.PostConstruct;
+import jakarta.mail.internet.InternetAddress;
 import org.apache.commons.lang3.Validate;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import javax.mail.internet.InternetAddress;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Properties;

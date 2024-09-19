@@ -4,13 +4,13 @@ import io.github.k_tomaszewski.notifications.internal.NotificationServiceBean;
 import io.github.k_tomaszewski.notifications.internal.Sender;
 import io.github.k_tomaszewski.notifications.smtp.Config;
 import io.github.k_tomaszewski.notifications.smtp.EmailSender;
+import jakarta.mail.internet.InternetAddress;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import javax.mail.internet.InternetAddress;
 import java.util.List;
 import java.util.Objects;
 

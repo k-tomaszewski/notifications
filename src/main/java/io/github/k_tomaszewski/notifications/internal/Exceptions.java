@@ -1,8 +1,8 @@
 package io.github.k_tomaszewski.notifications.internal;
 
 import io.github.k_tomaszewski.notifications.FatalNotificationException;
+import jakarta.mail.AuthenticationFailedException;
 
-import javax.mail.AuthenticationFailedException;
 import java.util.Set;
 
 public class Exceptions {

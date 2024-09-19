@@ -1,13 +1,12 @@
 package io.github.k_tomaszewski.notifications.internal;
 
 import io.github.k_tomaszewski.notifications.FatalNotificationException;
+import jakarta.mail.Message;
+import jakarta.mail.Session;
+import jakarta.mail.internet.AddressException;
+import jakarta.mail.internet.InternetAddress;
+import jakarta.mail.internet.MimeMessage;
 import org.slf4j.event.Level;
-
-import javax.mail.Message;
-import javax.mail.Session;
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
 
 public class MimeMessageUtil {
 
