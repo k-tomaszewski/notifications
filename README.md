@@ -1,6 +1,6 @@
 # Notifications
-Simple Java library for sending human-readable notifications from an application to a system operator
-dedicated for hobbyists with use of e-mail messages.
+Simple Java library for sending human-readable notifications from an application to a system operator,
+dedicated for hobbyists, with use of e-mail messages as transport.
 
 ## Features
 1. In-memory queue of notifications to be sent.
@@ -30,7 +30,7 @@ https://github.com/bbottema/simple-java-mail, but they lack functionality relate
 - retrying
 - redundancy
 
-Otherwise, these other solutions provide API too complex for a simple task of sending a notifications.
+Otherwise, these other solutions provide API too complex for a simple task of sending notifications.
 
 That is why I've started this project.
 
