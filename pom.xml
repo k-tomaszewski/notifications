@@ -15,7 +15,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>21</java.version>
-		<spring-boot.version>3.3.3</spring-boot.version>
+		<spring-boot.version>3.3.5</spring-boot.version>
 	</properties>
 
 	<dependencies>
@@ -37,6 +37,11 @@
 			<version>${spring-boot.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>jakarta.annotation</groupId>
+			<artifactId>jakarta.annotation-api</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
@@ -55,6 +60,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<version>${spring-boot.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
