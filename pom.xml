@@ -5,7 +5,9 @@
 
 	<groupId>io.github.k_tomaszewski</groupId>
 	<artifactId>notifications</artifactId>
-	<version>0.0.1</version>
+
+	<!-- The final version is provided by jgitver-maven-plugin -->
+	<version>0.0.0</version>
 
 	<name>Notifications</name>
 	<description>Notifications sender library using e-mails as transport.</description>
@@ -90,5 +92,13 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/k-tomaszewski/notifications</url>
+		</repository>
+	</distributionManagement>
 
 </project>
