@@ -84,6 +84,9 @@
 				<version>3.13.0</version>
 				<configuration>
 					<release>${java.version}</release>
+					<!-- source and target added for jitpack.io -->
+					<source>${java.version}</source>
+					<target>${java.version}</target>
 				</configuration>
 			</plugin>
 		</plugins>
