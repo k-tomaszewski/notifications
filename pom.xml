@@ -11,6 +11,7 @@
 
 	<name>Notifications</name>
 	<description>Notifications sender library using e-mails as transport.</description>
+	<url>https://github.com/k-tomaszewski/notifications</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -110,4 +111,17 @@
 		</repository>
 	</distributionManagement>
 
+	<licenses>
+		<license>
+			<name>GPL-3.0 license</name>
+			<url>https://github.com/k-tomaszewski/notifications?tab=GPL-3.0-1-ov-file#readme</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>Krzysztof Tomaszewski</name>
+			<email>krzysztof.tomaszewski@gmail.com</email>
+			<url>https://artofcode.wordpress.com/about/</url>
+		</developer>
+	</developers>
 </project>
