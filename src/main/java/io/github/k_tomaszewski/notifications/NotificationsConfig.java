@@ -8,6 +8,7 @@ import jakarta.mail.internet.InternetAddress;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,6 +16,7 @@ import java.util.List;
 import java.util.Objects;
 
 @Configuration
+@EnableConfigurationProperties
 public class NotificationsConfig {
 
     private static final Logger LOG = LoggerFactory.getLogger(NotificationsConfig.class);

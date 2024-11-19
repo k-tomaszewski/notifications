@@ -30,7 +30,7 @@ public class NotificationsConfigTest {
         assertHaveDefaultProperties(sender2.properties());
     }
 
-    private static void assertHaveDefaultProperties(Properties props) {
+    static void assertHaveDefaultProperties(Properties props) {
         Assertions.assertEquals("true", props.get("mail.smtp.auth"));
         Assertions.assertEquals("TLSv1.2", props.get("mail.smtp.ssl.protocols"));
         Assertions.assertEquals("1000", props.get("mail.smtp.connectiontimeout"));
