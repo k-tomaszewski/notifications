@@ -47,6 +47,11 @@ public class EmailSender implements Sender {
         }
     }
 
+        @Override
+    public String toString() {
+        return String.format("%s (%s)", name, emailFrom);
+    }
+
     private static InitResult initSessionAndTransport(Config config, String name) {
         Session session = Session.getInstance(config.properties());
         Transport transport;

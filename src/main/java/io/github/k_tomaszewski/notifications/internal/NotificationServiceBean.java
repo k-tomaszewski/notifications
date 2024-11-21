@@ -39,10 +39,12 @@ public class NotificationServiceBean implements NotificationService {
         notifications = new ArrayBlockingQueue<>(config.getQueueCapacity());
         semaphore = new Semaphore(0);
         this.senders = senders;
+        senderThread = new Thread(this::run, "notifications");
         if (senders.isEmpty()) {
             LOG.warn("No senders available for sending notifications.");
+        } else {
+            LOG.info("Notification senders: {}", senders);
         }
-        senderThread = new Thread(this::run, "notifications");
     }
 
     @Override
