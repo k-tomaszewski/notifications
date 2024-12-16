@@ -19,6 +19,7 @@ public class NotificationsProperties {
 
     private static final String DEFAULT_ENTRY = "default";
 
+    private boolean enabled = true;
     private String emailTo;
     private int queueCapacity = 1000;
     private String sendingStrategyClassName = BasicSendingStrategy.class.getName();
@@ -80,6 +81,14 @@ public class NotificationsProperties {
 
     public void setEmailTo(String emailTo) {
         this.emailTo = emailTo;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 
     @SuppressWarnings("unchecked")

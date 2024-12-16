@@ -134,3 +134,10 @@ public class MyConfig {
 ```
 Then you can inject a Spring bean implementing `io.github.k_tomaszewski.notifications.NotificationService` interface, which is the one
 you use for sending notifications.
+
+### Disabling notifications
+In certain cases, for example tests, it is handy to have notifications disabled. To disable notifications
+you need to set following Spring Boot property:
+```yaml
+notifications.enabled: false
+```

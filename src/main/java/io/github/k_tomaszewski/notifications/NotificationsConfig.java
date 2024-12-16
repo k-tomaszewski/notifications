@@ -28,7 +28,12 @@ public class NotificationsConfig {
 
     @Bean
     public NotificationService notificationService(NotificationsProperties config, AutowireCapableBeanFactory beanFactory) {
-        return new NotificationServiceBean(config, createSenders(config), beanFactory);
+        if (config.isEnabled()) {
+            return new NotificationServiceBean(config, createSenders(config), beanFactory);
+        } else {
+            LOG.info("Notifications are disabled by configuration.");
+            return (level, title, content) -> {};
+        }
     }
 
     private static List<? extends Sender>  createSenders(NotificationsProperties config) {
